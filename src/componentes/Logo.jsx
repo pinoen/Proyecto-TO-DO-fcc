@@ -8,7 +8,7 @@ const Logo = () => {
       <img
         src={freeCodeCamp}
         className='fcc-logo'
-        alt='logo de free code camp'
+        alt='Logo de free code camp'
       />
     </div>
   )

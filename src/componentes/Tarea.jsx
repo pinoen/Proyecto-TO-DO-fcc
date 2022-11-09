@@ -1,15 +1,23 @@
 import React from 'react'
 import '../hojas-de-estilo/Tarea.css'
 
-const Tarea = () => {
+const Tarea = ({ texto, eliminar, id }) => {
+
+  const handleClick = () => {
+    eliminar(id);
+  }
+
   return (
     <div className='tarea-contenedor'>
-      <div className='tarea-texto'>
-        Aprender React
+      <div
+        className='tarea-texto'>
+        {texto}
       </div>
 
       <div className='tarea-contenedor-iconos'>
-        <button className='tarea-icono'>Eliminar</button>
+        <button
+          onClick={handleClick}
+          className='tarea-icono'>Eliminar</button>
       </div>
     </div>
   )
